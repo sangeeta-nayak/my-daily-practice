@@ -1,12 +1,10 @@
 public class SumOfElements {
-    public static void main(String[]args){
-        int[] elements = {4, 5, 8, 3, 2};
+    public static int getSum(int[] elements) {
         int sum = 0;
-        int n = elements.length;
-        for(int i=0; i<n; i++){
-            sum = sum+elements[i];
+        for (int element : elements) {
+            sum += element;
         }
-        System.out.println(sum);
+        return sum;
     }
-
 }
+
